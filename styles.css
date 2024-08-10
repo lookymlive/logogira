@@ -1,0 +1,26 @@
+/* styles.css */
+.logo {
+  width: 100px; /* Tamaño del contenedor */
+  display: inline-block;
+  cursor: pointer;
+  /* Transición opcional para suavizar la activación */
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo img {
+  width: 100%; /* Ajusta la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción */
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
